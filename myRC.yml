@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: myonlinerc-demo
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     app: myonapp
     version: 2.6.1
