@@ -5,12 +5,12 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: myonapp
+    app: myonstore
     version: 2.6.1
   template:
     metadata:
       labels:
-        app: myonapp
+        app: myonstore
         version: 2.6.1
     spec:
       containers:
