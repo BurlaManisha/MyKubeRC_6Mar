@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myonline-rc
+spec:
+  replicas: 2
+  selector:
+    app: myonapp
+    version: 2.6.1
+  template:
+    metadata:
+      labels:
+        app: myonapp
+        version: 2.6.1
+    spec:
+      containers:
+        - name: myonlineapp-container
+          image: maludockerhub/myimg28feb:1
+          ports:
+            - containerPort: 8080
