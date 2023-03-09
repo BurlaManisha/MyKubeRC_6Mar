@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myonline-rc
+  name: myonlinerc-demo
 spec:
   replicas: 2
   selector:
