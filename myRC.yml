@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myonlinerc-demo
+  name: myonlineapp-rc
 spec:
   replicas: 3
   selector:
-    app: myonstore
+    app: myonlineapp
     version: 2.6.1
   template:
     metadata:
       labels:
-        app: myonstore
+        app: myonlineapp
         version: 2.6.1
     spec:
       containers:
