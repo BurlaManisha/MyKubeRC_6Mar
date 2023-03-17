@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: myonlineapp-container
-          image: maludockerhub/myimage17march23
+          image: maludockerhub/nwimg17mar23
           ports:
             - containerPort: 8080
