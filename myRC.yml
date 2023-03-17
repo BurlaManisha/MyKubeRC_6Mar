@@ -8,13 +8,13 @@ spec:
     app: myonlineapp
     version: 2.6.1
   template:
-    metadata:
+    metadata: 
       labels:
         app: myonlineapp
         version: 2.6.1
     spec:
       containers:
         - name: myonlineapp-container
-          image: maludockerhub/myimage28feb23
+          image: maludockerhub/myimage17march23
           ports:
             - containerPort: 8080
